@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morphos Kaffee</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Eigenes CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm" style="background-color: var(--kaffee-braun);">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-4 text-white" href="#">
+      ☕ Morphos Kaffee
+    </a>
+
+    <!-- Button -->
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-2">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#produkte">Produkte</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#ueber-uns">Über Uns</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#kontakt">Kontakt</a>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn btn-outline-light btn-sm" id="darkModeBtn">
+            🌙 Dark Mode
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- HERO  -->
+<section class="hero-section text-center d-flex align-items-center" id="home">
+  <div class="container py-5">
+    <p class="text-uppercase fw-semibold mb-2 hero-subtitle">Seit 2019 in München</p>
+
+    <h1 class="display-2 fw-bold mb-4">
+      Kaffee der <span class="hero-highlight">bewegt.</span>
+    </h1>
+
+    <p class="lead mb-5 mx-auto" style="max-width: 600px;">
+      Handgepflückte Bohnen aus Äthiopien und Kolumbien.
+      Geröstet in kleinen Chargen. Serviert mit Leidenschaft.
+    </p>
+
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="#produkte" class="btn btn-primary btn-lg px-5">Unsere Produkte</a>
+      <a href="#kontakt" class="btn btn-outline-light btn-lg px-5">Kontakt</a>
+    </div>
+  </div>
+</section>
+
+<!--  PRODUKTE  -->
+<section class="py-5" id="produkte" style="background-color: var(--kaffee-beige);">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <p class="text-uppercase fw-semibold mb-2" style="color: var(--kaffee-hell); letter-spacing: 3px;">
+        Was wir anbieten
+      </p>
+      <h2 class="display-5 fw-bold" style="color: var(--kaffee-braun);">
+        Unsere Spezialitäten
+      </h2>
+      <p class="text-muted mt-3 mx-auto" style="max-width: 500px;">
+        Jede Tasse ist ein Erlebnis. Entdeckt unsere handverlesene Auswahl.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm product-card">
+          <div class="card-img-top product-img-placeholder" 
+               style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80');">
+          </div>
+          <div class="card-body p-4">
+            <span class="badge mb-2" style="background-color: var(--kaffee-hell);">Bestseller</span>
+            <h5 class="card-title fw-bold" style="color: var(--kaffee-braun);">Äthiopischer Yirgacheffe</h5>
+            <p class="card-text text-muted">
+              Blumige Noten von Jasmin und Bergamotte. Leichte Säure, seidige Textur. Single Origin.
+            </p>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <span class="fw-bold fs-5" style="color: var(--kaffee-braun);">€18,90 / 250g</span>
+              <button class="btn btn-primary btn-sm">Bestellen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm product-card">
+          <div class="card-img-top product-img-placeholder"
+               style="background-image: url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&q=80');">
+          </div>
+          <div class="card-body p-4">
+            <span class="badge mb-2" style="background-color: var(--kaffee-braun);">Neu</span>
+            <h5 class="card-title fw-bold" style="color: var(--kaffee-braun);">Kolumbianischer Huila</h5>
+            <p class="card-text text-muted">
+              Vollmundiger Körper mit Noten von dunkler Schokolade und braunem Zucker. Perfekt als Espresso.
+            </p>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <span class="fw-bold fs-5" style="color: var(--kaffee-braun);">€16,50 / 250g</span>
+              <button class="btn btn-primary btn-sm">Bestellen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm product-card">
+          <div class="card-img-top product-img-placeholder"
+               style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80');">
+          </div>
+          <div class="card-body p-4">
+            <span class="badge mb-2 bg-secondary">Saisonal</span>
+            <h5 class="card-title fw-bold" style="color: var(--kaffee-braun);">Frühlings-Blend</h5>
+            <p class="card-text text-muted">
+              Unsere saisonale Mischung — hell geröstet, fruchtig, perfekt für Filter und Chemex.
+            </p>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <span class="fw-bold fs-5" style="color: var(--kaffee-braun);">€14,90 / 250g</span>
+              <button class="btn btn-primary btn-sm">Bestellen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--  UEBER UNS  -->
+<section class="py-5" id="ueber-uns">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Bild -->
+      <div class="col-12 col-lg-6">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80"
+             class="img-fluid rounded-4 shadow"
+             alt="Kaffeerösterei">
+      </div>
+
+      <!-- Text -->
+      <div class="col-12 col-lg-6">
+
+        <p class="text-uppercase fw-semibold mb-2"
+           style="color: var(--kaffee-hell); letter-spacing: 3px;">
+          Unsere Geschichte
+        </p>
+
+        <h2 class="display-5 fw-bold mb-4"
+            style="color: var(--kaffee-braun);">
+          Kaffee ist kein Getränk.<br>Es ist ein Ritual.
+        </h2>
+
+        <p class="text-muted mb-3">
+          2019 in einer kleinen Gartenhütte gegründet.
+          Heute rösten wir jede Woche frische Bohnen aus 12 Ländern.
+        </p>
+
+        <p class="text-muted mb-4">
+          Unser Team aus Baristas und Röstmeistern arbeitet jeden Tag daran,
+          dass jede Tasse besser ist als die letzte.
+        </p>
+
+        <!-- Stats -->
+        <div class="row g-3">
+
+          <div class="col-4 text-center">
+            <div class="p-3 rounded-3" style="background: var(--kaffee-beige);">
+              <div class="fw-bold fs-3" style="color: var(--kaffee-braun);">12</div>
+              <div class="small text-muted">Herkunftsländer</div>
+            </div>
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="p-3 rounded-3" style="background: var(--kaffee-beige);">
+              <div class="fw-bold fs-3" style="color: var(--kaffee-braun);">2.4k</div>
+              <div class="small text-muted">Kunden</div>
+            </div>
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="p-3 rounded-3" style="background: var(--kaffee-beige);">
+              <div class="fw-bold fs-3" style="color: var(--kaffee-braun);">4.9★</div>
+              <div class="small text-muted">Bewertung</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--  FAQ  -->
+<section class="py-5" style="background-color: var(--kaffee-beige);">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold" style="color: var(--kaffee-braun);">
+        Häufige Fragen
+      </h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1">
+
+                Wie lange sind eure Bohnen frisch?
+              </button>
+            </h2>
+
+            <div id="faq1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Unsere Bohnen sind etwa 6–8 Wochen nach der Röstung optimal frisch.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2">
+
+                Bietet ihr gemahlenen Kaffee an?
+              </button>
+            </h2>
+
+            <div id="faq2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Ja, wir mahlen den Kaffee passend zu deiner Zubereitungsmethode.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3">
+
+                Gibt es ein Abo Modell?
+              </button>
+            </h2>
+
+            <div id="faq3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Ja! 250g Kaffee alle 4 Wochen mit 10% Rabatt.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--  KONTAKT  -->
+<section class="py-5" id="kontakt">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6 text-center mb-5">
+        <p class="text-uppercase fw-semibold mb-2"
+           style="color: var(--kaffee-hell); letter-spacing: 3px;">
+          Schreibt uns
+        </p>
+        <h2 class="display-5 fw-bold" style="color: var(--kaffee-braun);">Kontakt</h2>
+        <p class="text-muted mt-3">
+          Fragen zu Bestellungen oder einfach Hallo sagen — wir antworten innerhalb von 24 Stunden.
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+
+        <form id="contactForm" class="needs-validation" novalidate>
+
+          <div class="mb-3">
+            <label for="from_name" class="form-label fw-semibold">Name</label>
+            <input type="text" class="form-control form-control-lg" id="from_name"
+                   placeholder="Euer vollständiger Name" required>
+            <div class="invalid-feedback">Bitte einen Namen eingeben.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="from_email" class="form-label fw-semibold">E-Mail</label>
+            <input type="email" class="form-control form-control-lg" id="from_email"
+                   placeholder="euer@email.de" required>
+            <div class="invalid-feedback">Bitte eine gültige E-Mail eingeben.</div>
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="form-label fw-semibold">Nachricht</label>
+            <textarea class="form-control form-control-lg" id="message" rows="5"
+                      placeholder="Was möchtet ihr uns mitteilen?" required></textarea>
+            <div class="invalid-feedback">Bitte eine Nachricht eingeben.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+            Nachricht senden
+          </button>
+
+        </form>
+
+        <div id="successMsg" class="alert alert-success mt-4 d-none" role="alert">
+          <strong>Nachricht gesendet!</strong> Wir melden uns innerhalb von 24 Stunden.
+        </div>
+
+        <div id="errorMsg" class="alert alert-danger mt-4 d-none" role="alert">
+          <strong>Fehler!</strong> Bitte versucht es nochmal.
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+   <!--  FOOTER  -->
+<footer class="py-4 text-center text-white" style="background-color: var(--kaffee-braun);">
+  <div class="container">
+    <p class="mb-1 fw-bold fs-5">☕ Morphos Kaffee</p>
+    <p class="mb-2 opacity-75 small">Leopoldstraße 42, 80802 München</p>
+    <p class="mb-0 opacity-50 small">
+      &copy; 2026 Morphos Kaffee. Alle Rechte vorbehalten.
+    </p>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Eigenes JS -->
+  <script src="script.js"></script>
+</body>
+</html>

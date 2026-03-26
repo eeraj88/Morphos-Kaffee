@@ -1,0 +1,123 @@
+/* MORPHOS KAFFEE — Custom CSS */
+
+/* Schriftarten */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Farben */
+:root {
+  --kaffee-braun: #3d1f00;
+  --kaffee-hell: #c8860a;
+  --kaffee-beige: #f5f0e8;
+  --kaffee-text: #2c1a00;
+}
+
+/* HERO SECTION */
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(135deg, rgba(61, 31, 0, 0.85), rgba(200, 134, 10, 0.7)),
+              url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1920&q=80') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-subtitle {
+  color: var(--kaffee-hell);
+  letter-spacing: 3px;
+}
+
+.hero-highlight {
+  color: var(--kaffee-hell);
+  position: relative;
+}
+
+.hero-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--kaffee-hell);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.btn-primary {
+  background-color: var(--kaffee-braun);
+  border-color: var(--kaffee-braun);
+}
+
+.btn-primary:hover {
+  background-color: var(--kaffee-hell);
+  border-color: var(--kaffee-hell);
+}
+
+.text-primary {
+  color: var(--kaffee-braun) !important;
+}
+
+.bg-primary {
+  background-color: var(--kaffee-braun) !important;
+}
+
+/*PRODUKT CARDS*/
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(61, 31, 0, 0.15) !important;
+}
+
+.product-img-placeholder {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HERO TEXT ANPASSUNG */
+
+[data-bs-theme="dark"] .hero-section {
+  color: white;
+}
+
+[data-bs-theme="light"] .hero-section {
+  color: white;
+}
+
+/* Dark Mode Anpassungen */
+[data-bs-theme="dark"] {
+  --kaffee-beige: #1a1a1a;
+}
+
+[data-bs-theme="dark"] .product-card {
+  background-color: #2d2d2d;
+}
+
+[data-bs-theme="dark"] .card-title,
+[data-bs-theme="dark"] .display-5 {
+  color: var(--kaffee-hell) !important;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+[data-bs-theme="dark"] .accordion-body {
+  background-color: #1a1a1a;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
